@@ -40,7 +40,7 @@ ER図
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
 | title     | string     | null: false                    |
-| details   | string     | null: false                    |
+| detail    | string     | null: false                    |
 | deadline  | date       | null: false                    |
 | category  | string     | null: false                    |
 | user      | references | null: false, foreign_key: true |
