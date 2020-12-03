@@ -7,12 +7,12 @@ class AspirationsController < ApplicationController
     @aspiration = Aspiration.new
   end
   
-  def create 
+  def create
     Aspiration.create(aspiration_params)
   end
 
   private
   def aspiration_params
-    params.require(:tweet).permit(:title, :detail, :deadline, :category,)
+    params.require(:aspiration).permit(:title, :detail, :deadline, :category,)
   end
 end
