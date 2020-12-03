@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :aspirations, only: :index
+  root to: 'aspirations#index'
+  resources :aspirations, only: [:index, :new]
 end
