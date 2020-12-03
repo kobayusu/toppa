@@ -1,0 +1,12 @@
+<div class="contents row">
+  <div class="container">
+    <h3>目標設定</h3>
+    <%= form_with(model: @tweet, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "目標" %>
+      <%= form.text_area :detail, placeholder: "詳細"%>
+      <%= form.text_field :deadline, placeholder: "期日"%>
+      <%= form.text_field :category, placeholder: "カテゴリー"%>
+      <%= form.submit "設定" %>
+    <% end %>
+  </div>
+</div>
