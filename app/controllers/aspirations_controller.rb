@@ -11,6 +11,15 @@ class AspirationsController < ApplicationController
     Aspiration.create(aspiration_params)
   end
 
+  def edit
+    @aspiration = Aspiration.find(params[:id])
+  end
+
+  def update
+    aspiration = Aspiration.find(params[:id])
+    aspiration.update(aspiration_params)
+  end
+  
   def show
     @aspiration = Aspiration.find(params[:id])
   end
