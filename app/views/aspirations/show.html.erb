@@ -1,0 +1,17 @@
+<div class="contents row">
+  <div class="content_post">
+    <div class="more">
+      <ul class="more_list">
+        <li>
+          <%= link_to '編集', edit_aspiration_path(@aspiration.id), method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', aspiration_path(@aspiration.id), method: :delete %>
+        </li>
+      </ul>
+    </div>
+    <p><%= @aspiration.detail%></p>
+    <span class="name"><%= @aspiration.title%>
+    </span>
+  </div>
+</div>

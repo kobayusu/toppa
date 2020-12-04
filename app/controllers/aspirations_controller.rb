@@ -11,6 +11,10 @@ class AspirationsController < ApplicationController
     Aspiration.create(aspiration_params)
   end
 
+  def show
+    @aspiration = Aspiration.find(params[:id])
+  end
+
   private
   def aspiration_params
     params.require(:aspiration).permit(:title, :detail, :deadline, :category,)
