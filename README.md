@@ -31,7 +31,6 @@ ER図
 | nickname  | string | null: false |
 | email     | string | null: false |
 | password  | string | null: false |
-| birth_day | date   | null: false |
 
 - has_many :aspiration
 - has_many :record
