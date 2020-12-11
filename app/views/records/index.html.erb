@@ -1,0 +1,9 @@
+<%= month_calendar events: @records do |date, records| %>
+  <%= date.day %>
+
+  <% records.each do |record| %>
+    <div>
+      <%= link_to record.text, record %>
+    </div>
+  <% end %>
+<% end %>
