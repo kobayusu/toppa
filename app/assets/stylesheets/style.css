@@ -867,6 +867,7 @@ div.contents.row div.content_post {
   background-position: center center;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: lightblue;
 }
 
 
@@ -889,12 +890,12 @@ div.contents.row div.content_post .more:hover ul.more_list {
 div.contents.row div.content_post .more ul.more_list {
   position: absolute;
   text-align: left;
-  width: 80px;
+  /* width: 80px; */
   right: 0;
   font-size: 12px;
   background-color: #fff;
   border: 1px solid #ddd;
-  display: none;
+  /* display: none; */
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }

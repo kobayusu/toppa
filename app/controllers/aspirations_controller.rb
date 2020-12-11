@@ -38,6 +38,6 @@ class AspirationsController < ApplicationController
   
   private
   def aspiration_params
-    params.require(:aspiration).permit(:title, :detail, :deadline, :category,)
+    params.require(:aspiration).permit(:title, :detail, :start_time, :category, )
   end
 end
