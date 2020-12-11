@@ -38,7 +38,7 @@ class RecordsController < ApplicationController
   private
 
   def record_parameter
-    params.require(:record).permit(:text, :start_time).merge(user_id: current_user.id, aspiration_id: params[:item_id])
+    params.require(:record).permit(:text, :start_time).merge(user_id: current_user.id, aspiration_id: params[:aspiration_id])
   end
 
 end

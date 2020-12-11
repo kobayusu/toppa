@@ -20,12 +20,12 @@
 
 <p id="notice"><%= notice %></p>
 <%= link_to '日記をかく', new_record_path %>
-<%= month_calendar do |date, record| %>
+<%= month_calendar events: @records do |date, records| %>
   <%= date.day %>
 
-  <% record.each do |record| %>
+  <% records.each do |record| %>
     <div>
-      <%= record.text %>
+      <%= link_to record.text, record %>
     </div>
   <% end %>
 <% end %>
