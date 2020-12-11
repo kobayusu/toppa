@@ -18,6 +18,12 @@ class AspirationsController < ApplicationController
   def update
     aspiration = Aspiration.find(params[:id])
     aspiration.update(aspiration_params)
+    #   @aspiration = Aspiration.find(params[:id])
+    #   if @aspiration.update(aspiration_parameter)
+    #     redirect_to aspirations_path, notice: "編集しました"
+    #   else
+    #     render 'edit'
+    #   end
   end
   
   def show
@@ -27,22 +33,9 @@ class AspirationsController < ApplicationController
   def destroy
     @aspiration = Aspiration.find(params[:id])
     @aspiration.destroy
-    redirect_to aspirations_path, notice:"削除しました"
+    redirect_to aspirations_path
   end
-
-  def edit
-    @aspiration = Aspiration.find(params[:id])
-  end
-
-  def update
-    @aspiration = Aspiration.find(params[:id])
-    if @aspiration.update(aspiration_parameter)
-      redirect_to aspirations_path, notice: "編集しました"
-    else
-      render 'edit'
-    end
-  end
-
+  
   private
   def aspiration_params
     params.require(:aspiration).permit(:title, :detail, :deadline, :category,)
