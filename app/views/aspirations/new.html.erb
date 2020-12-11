@@ -4,7 +4,7 @@
     <%= form_with(model: @aspiration, local: true) do |form| %>
       <%= form.text_field :title, placeholder: "目標" %>
       <%= form.text_area :detail, placeholder: "詳細", rows: "10"%>
-      <%= form.text_field :deadline, placeholder: "期日"%>
+      <%= form.date_select :start_time, placeholder: "期日"%>
       <%= form.text_field :category, placeholder: "カテゴリー"%>
       <%= form.submit "設定" %>
     <% end %>

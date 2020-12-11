@@ -40,7 +40,7 @@ ER図
 | --------- | ---------- | ------------------------------ |
 | title     | string     | null: false                    |
 | detail    | string     | null: false                    |
-| deadline  | date       | null: false                    |
+| start_time  | date       | null: false                    |
 | category  | string     | null: false                    |
 | user      | references | null: false, foreign_key: true |
 
