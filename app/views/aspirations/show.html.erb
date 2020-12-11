@@ -10,8 +10,19 @@
         </li>
       </ul>
     </div>
-    <p><%= @aspiration.detail%></p>
+    <p><%= @aspiration.detail %></p>
     <span class="name"><%= @aspiration.title%>
     </span>
   </div>
 </div>
+<p id="notice"><%= notice %></p>
+
+<%= month_calendar do |date, aspiration| %>
+  <%= date.day %>
+
+  <% aspiration.each do |aspiration| %>
+    <div>
+      <%= link_to aspiration.title %>
+    </div>
+  <% end %>
+<% end %>
