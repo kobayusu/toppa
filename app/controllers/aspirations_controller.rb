@@ -1,4 +1,5 @@
 class AspirationsController < ApplicationController
+
   def index
     @aspirations = Aspiration.all
   end
@@ -28,6 +29,7 @@ class AspirationsController < ApplicationController
   
   def show
     @aspiration = Aspiration.find(params[:id])
+    @records = Record.all
   end
 
   def destroy
@@ -38,6 +40,7 @@ class AspirationsController < ApplicationController
   
   private
   def aspiration_params
-    params.require(:aspiration).permit(:title, :detail, :start_time, :category, )
+    params.require(:aspiration).permit(:title, :detail, :start_time, :category).merge(user_id: current_user.id)
   end
+
 end

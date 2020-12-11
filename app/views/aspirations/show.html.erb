@@ -11,19 +11,21 @@
       </ul>
     </div>
     <p><%= @aspiration.detail %></p>
-    <span class="name"><%= @aspiration.title%>
+    <span class="name">
+      期日 <%= @aspiration.start_time %>
+    </span>
     </span>
   </div>
 </div>
 
 <p id="notice"><%= notice %></p>
-
-<%= month_calendar do |date, aspirations| %>
+<%= link_to '日記をかく', new_record_path %>
+<%= month_calendar events: @records do |date, records| %>
   <%= date.day %>
 
-  <% aspirations.each do |aspiration| %>
+  <% records.each do |record| %>
     <div>
-      <%= aspiration.title %>
+      <%= link_to record.text, record %>
     </div>
   <% end %>
 <% end %>
