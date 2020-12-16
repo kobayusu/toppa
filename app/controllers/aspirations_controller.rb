@@ -8,6 +8,7 @@ class AspirationsController < ApplicationController
     @aspiration = Aspiration.new
   end
   
+  
   def create
     Aspiration.create(aspiration_params)
   end
