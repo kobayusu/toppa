@@ -43,7 +43,11 @@
 　情報交換のためのコメントやチャット機能
 
 ## DEMO
+* サインインページ
   <img width="939" alt="toppaサインイン" src="https://user-images.githubusercontent.com/70507300/102573781-94781500-4132-11eb-93cf-351674894503.png">
+
+* 目標設定
+  ![bb5e3addbd116deccc5f05b51f6a9c06](https://user-images.githubusercontent.com/70507300/102574324-d190d700-4133-11eb-9939-7c07a0610b88.gif)
 
 
 ## 開発環境
