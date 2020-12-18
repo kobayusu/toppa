@@ -12,7 +12,7 @@
 
 ## テスト用アカウント
 
-* アカウント名　test1＠mail.com
+* アカウント名　test1＠test.com
 * パスワード　　password1
 
 ## 利用方法
