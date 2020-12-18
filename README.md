@@ -12,7 +12,7 @@
 
 ## テスト用アカウント
 
-* アカウント名　test1
+* アカウント名　test1＠mail.com
 * パスワード　　password1
 
 ## 利用方法
@@ -49,6 +49,8 @@
 * 目標設定
   ![bb5e3addbd116deccc5f05b51f6a9c06](https://user-images.githubusercontent.com/70507300/102574324-d190d700-4133-11eb-9939-7c07a0610b88.gif)
 
+* 目標詳細
+  ![c63a229518fc256e7852e6f6738f0242](https://user-images.githubusercontent.com/70507300/102574612-8b884300-4134-11eb-92e2-f1d4406aecd9.gif)
 
 ## 開発環境
   HTML,CSS,Ruby,Ruby on rails,
