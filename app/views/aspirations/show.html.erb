@@ -20,7 +20,6 @@
   </div>
 </div>
 
-<p id="notice"><%= notice %></p>
 <%= link_to '日記をかく', new_record_path %>
 <%= month_calendar events: @records do |date, records| %>
   <%= date.day %>
