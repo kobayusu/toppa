@@ -895,7 +895,7 @@ div.contents.row div.content_post .more ul.more_list {
   font-size: 12px;
   background-color: #fff;
   border: 1px solid #ddd;
-  /* display: none; */
+  display: none; 
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
