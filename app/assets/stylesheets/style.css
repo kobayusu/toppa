@@ -509,9 +509,9 @@ ul li {
   width: 39.86667%;
 }
 
-.row .grid-6 {
-  /*width: 48.2%;*/
-}
+/*.row .grid-6 {
+  width: 48.2%;
+}*/
 
 .row .grid-7 {
   width: 56.53333%;
@@ -1038,4 +1038,8 @@ footer p {
 
 .search-form .search-btn {
   width: 10%;
+}
+
+.diary {
+  text-align: center;
 }
