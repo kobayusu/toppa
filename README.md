@@ -8,7 +8,7 @@
 * 設定した目標の日記
 
 ## デプロイ先
-  https://toppa29766.herokuapp.com/
+  <a hlef="https://toppa29766.herokuapp.com/">toppa</a>
 
 ## テスト用アカウント
 
