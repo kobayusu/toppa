@@ -12,8 +12,8 @@
 
 ## テスト用アカウント
 
-* アカウント名　test1＠test.com
-* パスワード　　password1
+* アカウント名  test1＠test.com
+* パスワード    password1
 
 ## 利用方法
 * ユーザー登録を行う
