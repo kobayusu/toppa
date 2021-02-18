@@ -1,7 +1,7 @@
 class AspirationsController < ApplicationController
 
   def index
-    @aspirations = Aspiration.all
+    @aspirations = Aspiration.includes(:user)
   end
 
   def new
@@ -30,7 +30,7 @@ class AspirationsController < ApplicationController
   
   def show
     @aspiration = Aspiration.find(params[:id])
-    @records = Record.all
+    @record = Record.includes(:aspiration)
   end
 
   def destroy
