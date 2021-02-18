@@ -14,17 +14,9 @@
     </div>
     <p><%= @aspiration.title%></p>
     <span class="name">
-      期日 <%= @aspiration.start_time,  %>
     </span>
 
   </div>
-</div>
-<div class="diary">
-  <% if user_signed_in? && current_user.id == @aspiration.user_id %>
-    <%= link_to '日記をかく', new_record_path %>
-  <% else %>
-    <%="日記"%>
-  <% end %>
 </div>
 
 <div class="contents row">
@@ -32,16 +24,16 @@
     <div class="more">
       <ul class="more_list">
         <li>
-          <%#= link_to '詳細', record_path(@record.id), method: :get %>
+          <%#= link_to '詳細', show_record_path(@record.id), method: :get %>
         </li>
       </ul>
     </div>
     <p><%= @aspiration.detail %></p>
     <span class="name">
-      記入日 <%= @aspiration.start_time %>
     </span>
   </div>
 </div>
+
 <div class="diary">
   <% if user_signed_in? && current_user.id == @aspiration.user_id %>
     <%= link_to '日記をかく', new_record_path %>
@@ -49,26 +41,21 @@
     <%="日記"%>
   <% end %>
 </div>
+
 <div class="contents row">
-  <div class="content_post">
-    <div class="more">
-      <ul class="more_list">
-
-      
-      </ul>
+  <% @records.each do |record| %>
+    <div class="content_post">
+      <div class="more">
+        <ul class="more_list">
+          <li>
+            <%#= link_to '詳細', record_path(@records.id), method: :get %>
+          </li>
+        </ul>
+      </div>
+      <p><%= record.text %></p>
+      <span class="name">
+      記入日 <%= record.start_time.strftime("%Y-%m-%d" ) %>
+      </span>
     </div>
-    <p><%= @aspiration.detail %></p>
-    <span class="name">
-      記入日 <%= @aspiration.start_time %>
-    </span>
-  </div>
-</div>
-<%#= month_calendar events: @records do |date, records| %>
-  <%#= date.day %>
-
-  <%# records.each do |record| %>
-    <%#div>
-      <%#= link_to record.text, record %>
-    <%#/div>
   <% end %>
-<%# end %>
+</div>
