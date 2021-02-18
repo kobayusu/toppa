@@ -3,7 +3,7 @@ class CreateAspirations < ActiveRecord::Migration[6.0]
     create_table :aspirations do |t|
       t.string :title
       t.string :detail
-      t.datetime :start_time
+      t.date :start_time
       t.string :category
       t.references :user
       t.timestamps

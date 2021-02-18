@@ -10,7 +10,7 @@
       </div>
       <p><%= aspiration.title %></p>
       <span class="name">
-        期日 <%= aspiration.start_time %>
+        期日 <%= aspiration.start_time.strftime("%Y-%m-%d") %>
       </span>
     </div>
   <% end %>
