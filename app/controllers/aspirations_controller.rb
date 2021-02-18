@@ -30,7 +30,7 @@ class AspirationsController < ApplicationController
   
   def show
     @aspiration = Aspiration.find(params[:id])
-    @records = Record.all
+    @record = Record.all
   end
 
   def destroy
