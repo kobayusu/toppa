@@ -42,22 +42,20 @@
   <% end %>
 </div>
 
-
 <div class="contents row">
-
-  <% @records.each do |record| %>
-      <div class="content_post">
-        <div class="more">
-          <ul class="more_list">
-            <li>
-              <%#= link_to '詳細', record_path(@records.id), method: :get %>
-            </li>
-          </ul>
-        </div>
-        <p><%= record.text %></p>
-        <span class="name">
-        記入日 <%= record.start_time.strftime("%Y-%m-%d" ) %>
-        </span>
+  <% @record.each do |record| %>
+    <div class="content_post">
+      <div class="more">
+        <ul class="more_list">
+          <li>
+            <%= link_to '詳細', record_path(record.id), method: :get %>
+          </li>
+        </ul>
       </div>
+      <p><%= record.text %></p>
+      <span class="name">
+      記入日 <%= record.start_time.strftime("%Y-%m-%d" ) %>
+      </span>
+    </div>
   <% end %>
 </div>
